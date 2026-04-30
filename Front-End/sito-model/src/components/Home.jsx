@@ -1,13 +1,7 @@
-import { Container, Row, Col } from "react-bootstrap";
+import HeroSection from "./HeroSection";
 
 const Home = () => {
-  return (
-    <Container>
-      <Row>
-        <Col></Col>
-      </Row>
-    </Container>
-  );
+  return <HeroSection />;
 };
 
 export default Home;
