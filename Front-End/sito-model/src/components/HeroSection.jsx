@@ -4,9 +4,7 @@ const HeroSection = () => {
   return (
     <>
       <div id="hero">
-        <div id="div_logo_sito">
-          <h1>Logo sito</h1>
-        </div>
+        <div id="div_logo_sito"></div>
         <div id="hero_content">
           <h4>Intro Text</h4>
           <h1>Titolo della pagina</h1>
