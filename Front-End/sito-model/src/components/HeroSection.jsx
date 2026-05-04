@@ -1,4 +1,5 @@
-import Hero_video_banner from "../assets/hero_video_banner.mp4";
+import Hero_video_banner from "../assets/Hero_Video_Banner_480p.mp4";
+import Hero_Banner_frame from "../assets/hero_video_banner_frame.jpg";
 
 const HeroSection = () => {
   return (
@@ -18,6 +19,9 @@ const HeroSection = () => {
           loop
           muted
           id="hero_video_banner"
+          playsInline
+          preload="none"
+          poster={Hero_Banner_frame}
         ></video>
       </div>
     </>
