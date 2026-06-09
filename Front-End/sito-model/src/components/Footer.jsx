@@ -16,8 +16,11 @@ const Footer = (props) => {
             </div>
           </Col>
           <Col xs={6}>
-            <div className="d-flex justify-content-center align-items-center flex-column ">
+            <div className="d-flex justify-content-center align-items-center flex-column gap-3">
               <h3>Titolo della pagina</h3>
+              <span className="border-limit"></span>
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <span className="border-limit"></span>
               <h3>Lorem ipsum dolor sit amet</h3>
             </div>
           </Col>
