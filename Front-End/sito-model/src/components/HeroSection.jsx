@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const HeroSection = () => {
   useEffect(() => {
-    ScrollReveal().reveal(".animation-scrolling", {
+    ScrollReveal().reveal(".animation-scrolling-hero-section", {
       duration: 2000,
       distance: "50px",
       origin: "right",
@@ -18,7 +18,7 @@ const HeroSection = () => {
     <>
       <div id="hero">
         <div id="div_logo_sito"></div>
-        <div id="hero_content" className="animation-scrolling">
+        <div id="hero_content" className="animation-scrolling-hero-section">
           <h4>Intro Text</h4>
           <h1>Titolo della pagina</h1>
           <button type="button" className="button">

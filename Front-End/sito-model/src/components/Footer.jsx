@@ -6,7 +6,7 @@ const Footer = (props) => {
     <div id={props.id}>
       <Container className="main-div-footer">
         <Row className="d-flex justify-content-between align-items-center">
-          <Col xs={6}>
+          <Col xs={12} md={5} lg={6}>
             <div className="d-flex justify-content-center align-items-center ">
               <img
                 src={imageLogo}
@@ -15,13 +15,13 @@ const Footer = (props) => {
               />
             </div>
           </Col>
-          <Col xs={6}>
-            <div className="d-flex justify-content-center align-items-center flex-column gap-3">
-              <h3>Titolo della pagina</h3>
+          <Col xs={12} md={7} lg={6}>
+            <div className="d-flex justify-content-center align-items-center flex-column gap-4">
+              <h5>Titolo della pagina</h5>
               <span className="border-limit"></span>
-              <h3>Lorem ipsum dolor sit amet</h3>
+              <h5>Lorem ipsum dolor sit amet</h5>
               <span className="border-limit"></span>
-              <h3>Lorem ipsum dolor sit amet</h3>
+              <h5>Lorem ipsum dolor sit amet</h5>
             </div>
           </Col>
         </Row>

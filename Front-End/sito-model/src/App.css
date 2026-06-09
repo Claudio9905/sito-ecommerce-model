@@ -384,6 +384,7 @@ body {
 
 #footer {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -391,6 +392,10 @@ body {
   margin-top: 5em;
   padding: 0.5em;
   background-color: rgba(68, 66, 66, 0.656);
+  background-image: url("./assets/banner_post.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   & .main-div-footer {
     display: flex;
@@ -400,13 +405,32 @@ body {
     margin: 0;
     padding: 0;
     border: 1px solid rgba(192, 192, 192, 0.528);
+    backdrop-filter: blur(7px);
     box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.314);
+    z-index: 2;
   }
 
   & .border-limit {
     border: 1px solid rgba(192, 192, 192, 0.528);
     width: 50%;
   }
+
+  & h5 {
+    color: white;
+    font-size: 1.2em;
+  }
+}
+#footer::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.327);
 }
 
 /* ------------------------------------------------------------------------- */
