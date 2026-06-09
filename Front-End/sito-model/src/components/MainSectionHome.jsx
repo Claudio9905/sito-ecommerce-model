@@ -1,12 +1,27 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { useEffect } from "react";
 import BannerPost from "../assets/banner_post.jpg";
+import ScrollReveal from "scrollreveal";
 
 const MainSectionHome = (props) => {
+  // const boxRef = useRef(null);
+
+  useEffect(() => {
+    ScrollReveal().reveal(".animation-scrolling", {
+      duration: 2000,
+      distance: "50px",
+      origin: "right",
+      easing: "cubic-bezier(0.5, 0, 0, 1)",
+      interval: 300,
+      reset: true,
+    });
+  }, []);
+
   return (
     <>
       <Container id={props.id}>
         <Row id="row_section_main">
-          <Col xs={12} className="first-poster">
+          <Col xs={12} className="first-poster animation-scrolling">
             <img src={BannerPost} alt="Banner Post" />
             <div className="div-content-poster">
               <h1>Titolo della pagina</h1>
@@ -19,7 +34,7 @@ const MainSectionHome = (props) => {
               </p>
             </div>
           </Col>
-          <Col xs={12} className="mid-section">
+          <Col xs={12} className="mid-section animation-scrolling">
             <div>
               <h3>Titolo della pagina</h3>
               <p>
@@ -39,7 +54,7 @@ const MainSectionHome = (props) => {
               </p>
             </div>
           </Col>
-          <Col xs={12} className="second-poster">
+          <Col xs={12} className="second-poster animation-scrolling">
             <div className="div-content-poster">
               <h1>Titolo della pagina</h1>
               <p>
